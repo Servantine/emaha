@@ -3,6 +3,7 @@
           <a class="nav-link {{ ($key == 'Home') ? 'active':'' }}" href="/">Home</a>
           <a class="nav-link {{ ($key == 'Profile') ? 'active':'' }}" href="/profile">Profile</a>
           <a class="nav-link {{ ($key == 'Mahasiswa') ? 'active':'' }}" href="/mahasiswa">Mahasiswa</a>
+          <a class="nav-link {{ ($key == 'User') ? 'active':'' }}" href="/user">Users</a>
           <a class="nav-link {{ ($key == 'Contact') ? 'active':'' }}" href="/contact">Contact</a>
         </div>
 </div>

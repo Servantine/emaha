@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\mahasiswa;
+use App\User;
 
 class PageController extends Controller
 {
@@ -70,5 +71,14 @@ class PageController extends Controller
 
         return redirect('student')->with('flash', 'Data Berhasil di Hapus');
 
+    }
+
+    public function user(){
+        $user = User::paginate(5);
+        return view('user', ['key' => 'User' ,'user' => $user]);
+    }
+
+    public function tambahuser(){
+        return view('formadduser' , ['key' => 'User']);
     }
 }

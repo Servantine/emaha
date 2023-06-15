@@ -23,7 +23,9 @@
                               <div class="media">
                                    <img class="align-self-center mr-3" src="https://lh3.googleusercontent.com/ogw/AOLn63FqQEe8l1bBaifRfFPF6tdfGtK33T31Q_98OPBnoA=s32-c-mo" height="50" width="50" alt="Generic placeholder image">
                                    <div class="media-body">
-                                     <h5 class="mt-2">Servantin</h5>
+                                     <h5 class="mt-2"> 
+                                      {{ Auth::user()->name ?? '' }} 
+                                    </h5>
                                      <small><i class="bi bi-emoji-smile"></i> Selamat Siang ...</small>
                                    </div>
                                  </div>
@@ -31,7 +33,7 @@
                            <a class="dropdown-item border-top" href="#">
                               <i class="bi bi-gear-fill"></i> Settings
                            </a>
-                           <a class="dropdown-item border-top" href="#">
+                           <a class="dropdown-item border-top" href="/logout">
                               <i class="bi bi-door-open-fill"></i> Log Out
                            </a>
                          </div>
