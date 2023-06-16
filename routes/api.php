@@ -24,3 +24,7 @@ Route::post('/mahasiswa/update/{id}', 'MhsApiController@create');
 Route::delete('/mahasiswa/delete/{id}', 'MhsAPIController@delete');
 
 
+Route::get('task/read', 'TAskAPIController@read');
+Route::post('task/create', 'TAskAPIController@create');
+Route::post('/task/update/{id}', 'TAskAPIController@create');
+Route::delete('/task/delete/{id}', 'TAskAPIController@delete');
